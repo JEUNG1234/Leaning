@@ -16,7 +16,7 @@ const UseRefTest = () => {
 
   const handleSubmit = (ev) => {
     alert(`이름 : ${name}, 성별 : ${gender}`);
-    ev.preventDefault(); // a태그나 submit태그같은 고유동작을 중당하기위한 이벤트 방지
+    ev.preventDefault(); 
   }
 
   const handleReset = () => {
@@ -24,9 +24,6 @@ const UseRefTest = () => {
     setGender("man");
 
   }
-  //초기화버튼을 눌렀을 때
-  //state가변경되므로 화면이 리렌더링 되면
-  //input의 포커스 설정
 
   useEffect(() => {
     useInput.current?.focus();
